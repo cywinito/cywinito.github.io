@@ -3,11 +3,11 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #ffffff;
+    color: $color-white;
 }
 
 .heading-primary{
-    color: black;
+    color: $color-black;
     text-transform: uppercase;
 }
 .heading-primary-main{
