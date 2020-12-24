@@ -1,12 +1,19 @@
-$color-primary: #57CC99;
-$color-secondary: #38A3A5;
-$color-tertiary: #22577A;
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-$color-primary-light: #7ED56F;
-$color-primary-dark: #28B485;
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-$color-black: #000000;
-$color-white-light: #FEFEFE;
-$color-white: #FFFFFF;
-$color-grey: #F1F1F1;
+@import "components/button";
+@import "components/card";
+@import "components/carousel";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";
 

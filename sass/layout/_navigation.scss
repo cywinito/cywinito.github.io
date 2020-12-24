@@ -1,0 +1,19 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image{
+        margin-left: 40px;
+        width: 150px;
+    }
+
+    &__link{
+        flex-direction: row;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 600;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+}

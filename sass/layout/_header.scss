@@ -1,0 +1,26 @@
+.header{
+    height: 95vh;
+    background-image:linear-gradient(rgba(56,163,165,0.2),rgba(56,163,165,0.2)),url(../img/flores.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+    &__text-box{
+        position: absolute;
+        top: 47.5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.icon-wapp{
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    margin-left: 65%;
+}
