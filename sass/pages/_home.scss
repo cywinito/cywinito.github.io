@@ -1,1 +1,10 @@
 //ACA VA EL SASS DE CADA SECCION
+.section-categorias{
+    
+    background: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light,0.8),
+        rgba($color-primary-dark,0.8));
+        padding: 10rem 0;
+        
+}

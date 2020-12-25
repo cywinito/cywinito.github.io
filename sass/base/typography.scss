@@ -14,5 +14,10 @@ body {
     display: block;
     letter-spacing: 0.02em;
     font-size: 1em;
-    
+}
+
+.heading-secondary{
+    font-weight: 500;
+    color: $color-black;
+    text-transform: uppercase;
 }
