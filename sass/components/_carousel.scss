@@ -1,0 +1,17 @@
+.carousel__controls{
+    background-color: $color-primary-light;
+    width: 5% !important;
+
+    &__previous{
+        background-image: url('../../img/svg/ic_keyboard_arrow_left_120px.svg') !important;
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    &__next{
+        background-image: url('../../img/svg/ic_keyboard_arrow_right_120px.svg') !important;
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+}

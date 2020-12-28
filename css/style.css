@@ -174,45 +174,57 @@ body {
     font-size: 1rem;
     line-height: 1.5rem; }
 
+.carousel__controls {
+  background-color: #7ED56F;
+  width: 5% !important; }
+  .carousel__controls__previous {
+    background-image: url("../../img/svg/ic_keyboard_arrow_left_120px.svg") !important;
+    width: 120px !important;
+    height: 120px !important; }
+  .carousel__controls__next {
+    background-image: url("../../img/svg/ic_keyboard_arrow_right_120px.svg") !important;
+    width: 120px !important;
+    height: 120px !important; }
+
 .row {
-  max-width: 114rem;
-  margin: 0 auto; }
+  max-width: 114rem !important;
+  margin: 0 auto !important; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 8rem !important; }
     @media only screen and (max-width: 48em) {
       .row:not(:last-child) {
-        margin-bottom: 6rem; } }
+        margin-bottom: 6rem !important; } }
   @media only screen and (max-width: 48em) {
     .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
+      max-width: 50rem !important;
+      padding: 0 3rem !important; } }
   .row::after {
     content: "";
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    float: left; }
+    float: left !important; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 15rem; }
+      margin-right: 15rem !important; }
       @media only screen and (max-width: 48em) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
+          margin-right: 0 !important;
+          margin-bottom: 6rem !important; } }
     @media only screen and (max-width: 48em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
-    width: calc((100% - 15rem) / 2); }
+    width: calc((100% - 15rem) / 2) !important; }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 15rem) / 3); }
+    width: calc((100% - 2 * 15rem) / 3) !important; }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 15rem) / 3) + 15rem); }
+    width: calc(2 * ((100% - 2 * 15rem) / 3) + 15rem) !important; }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 15rem) / 4); }
+    width: calc((100% - 3 * 15rem) / 4) !important; }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 15rem) / 4) + 15rem); }
+    width: calc(2 * ((100% - 3 * 15rem) / 4) + 15rem) !important; }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 15rem) / 4) + 2 * 15rem); }
+    width: calc(3 * ((100% - 3 * 15rem) / 4) + 2 * 15rem) !important; }
 
 .header {
   height: 95vh;
@@ -248,3 +260,11 @@ body {
 .section-categorias {
   background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
   padding: 10rem 0; }
+
+.section-promociones {
+  background-color: #FFFFFF;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
