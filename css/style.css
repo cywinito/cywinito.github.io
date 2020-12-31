@@ -117,36 +117,38 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.btn, .btn:link, .btn:visited {
+.button, .button:link, .button:visited {
   margin-top: 4em;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   font-weight: 600;
   border-radius: 100px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  padding: 20px 40px 20px 40px;
-  width: 30%; }
+  padding: 2rem 4rem 2rem 2rem;
+  width: 21rem;
+  background-color: #57CC99;
+  color: #000000;
+  border: none;
+  cursor: pointer; }
 
-.btn__text {
-  padding-right: 15%;
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.button__text {
   font-size: 1.7rem;
   font-weight: 600; }
 
-.btn__icon-wapp {
+.button::after {
+  content: url(../../img/svg/whatsapplogo.svg);
   position: absolute;
-  width: 31px;
-  height: 31px;
-  margin-left: 65%;
+  padding-left: 1rem;
+  float: right;
   transform: scale(0.85); }
 
-.btn-green {
-  background-color: #57CC99;
-  color: #000000; }
-
-.card {
-  height: 25rem;
+.card1 {
+  height: 22rem;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
@@ -154,25 +156,70 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding-top: 5rem; }
-  .card__details {
+  .card1__details {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 3rem; }
-  .card__icon {
+  .card1__icon {
     margin-bottom: 3rem; }
-  .card__icon-1 {
+  .card1__icon-1 {
     width: 50px; }
-  .card__icon-2 {
+  .card1__icon-2 {
     width: 41.29px; }
-  .card__icon-3 {
+  .card1__icon-3 {
     width: 29.45px; }
-  .card__text {
+  .card1__text {
     color: #777777;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem; }
+
+.card2 {
+  height: 50rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  position: relative; }
+  .card2__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card2__picture--1 {
+      background-image: url(./../../img/mika-baumeister-xWtloyvoK0E-unsplash.jpg); }
+    .card2__picture--2 {
+      background-image: url(../../img/nathaniel-yeo-747NDboAWNY-unsplash.jpg); }
+    .card2__picture--3 {
+      background-image: url(../../img/hans-reniers-lQGJCMY5qcM-unsplash.jpg); }
+  .card2__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    top: 14rem;
+    right: 2rem;
+    width: 75%; }
+  .card2__heading-span {
+    padding: 0.7rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+  .card2__details {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .card2__text {
+    font-weight: 400;
+    color: #777777;
+    font-size: 1.3rem; }
 
 .carousel__controls {
   background-color: #7ED56F;
@@ -205,7 +252,7 @@ body {
   .row [class^="col-"] {
     float: left !important; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 15rem !important; }
+      margin-right: 30rem !important; }
       @media only screen and (max-width: 48em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0 !important;
@@ -214,17 +261,57 @@ body {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
-    width: calc((100% - 15rem) / 2) !important; }
+    width: calc((100% - 30rem) / 2) !important; }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 15rem) / 3) !important; }
+    width: calc((100% - 2 * 30rem) / 3) !important; }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 15rem) / 3) + 15rem) !important; }
+    width: calc(2 * ((100% - 2 * 30rem) / 3) + 30rem) !important; }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 15rem) / 4) !important; }
+    width: calc((100% - 3 * 30rem) / 4) !important; }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 15rem) / 4) + 15rem) !important; }
+    width: calc(2 * ((100% - 3 * 30rem) / 4) + 30rem) !important; }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 15rem) / 4) + 2 * 15rem) !important; }
+    width: calc(3 * ((100% - 3 * 30rem) / 4) + 2 * 30rem) !important; }
+
+.row2 {
+  max-width: 114rem !important;
+  margin: 0 auto !important; }
+  .row2:not(:last-child) {
+    margin-bottom: 8rem !important; }
+    @media only screen and (max-width: 48em) {
+      .row2:not(:last-child) {
+        margin-bottom: 6rem !important; } }
+  @media only screen and (max-width: 48em) {
+    .row2 {
+      max-width: 50rem !important;
+      padding: 0 3rem !important; } }
+  .row2::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row2 [class^="col-"] {
+    float: left !important; }
+    .row2 [class^="col-"]:not(:last-child) {
+      margin-right: 6rem !important; }
+      @media only screen and (max-width: 48em) {
+        .row2 [class^="col-"]:not(:last-child) {
+          margin-right: 0 !important;
+          margin-bottom: 6rem !important; } }
+    @media only screen and (max-width: 48em) {
+      .row2 [class^="col-"] {
+        width: 100% !important; } }
+  .row2 .col-1-of-2 {
+    width: calc((100% - 30rem) / 2) !important; }
+  .row2 .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3) !important; }
+  .row2 .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 30rem) / 3) + 30rem) !important; }
+  .row2 .col-1-of-4 {
+    width: calc((100% - 3 * 30rem) / 4) !important; }
+  .row2 .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 30rem) / 4) + 30rem) !important; }
+  .row2 .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 30rem) / 4) + 2 * 30rem) !important; }
 
 .header {
   height: 95vh;
@@ -268,3 +355,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.section-sucursales {
+  background-color: #F1F1F1;
+  padding: 10rem 0; }

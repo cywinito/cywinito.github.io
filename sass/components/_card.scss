@@ -1,6 +1,6 @@
-.card{
+.card1{
     
-    height: 25rem;
+    height: 22rem;
     background-color: rgba($color-white,0.8);
     box-shadow: 0px 8px 24px rgba($color-black, 0.15);
     border-radius: 15px;
@@ -44,5 +44,78 @@
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.5rem;
+    }
+}
+
+.card2{
+    
+    height: 50rem;
+    background-color: rgba($color-white,0.8);
+    box-shadow: 0px 8px 24px rgba($color-black, 0.15);
+    border-radius: 15px;
+    position: relative;
+
+
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+        &--1 {
+            background-image: 
+            url(./../../img/mika-baumeister-xWtloyvoK0E-unsplash.jpg);
+        }
+
+        &--2 {
+            background-image: 
+            url(../../img/nathaniel-yeo-747NDboAWNY-unsplash.jpg);
+        }
+
+        &--3 {
+            background-image: 
+            url(../../img/hans-reniers-lQGJCMY5qcM-unsplash.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 14rem;
+        right: 2rem;
+        width: 75%;
+        
+    
+    }
+
+    &__heading-span {
+        padding: 0.7rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-light, .85), 
+            rgba($color-primary-dark, .85));
+        
+    }
+
+    &__details {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    &__text{
+        font-weight: 400;
+        color: $color-grey-2;
+        font-size: 1.3rem;
     }
 }
