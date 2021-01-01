@@ -51,7 +51,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -92,6 +93,13 @@ body {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase; }
+
+.heading-tertiary {
+  font-weight: 500;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 2.1em;
+  margin-bottom: 1rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -191,11 +199,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card2__picture--1 {
-      background-image: url(./../../img/mika-baumeister-xWtloyvoK0E-unsplash.jpg); }
+      background-image: url(./../../img/pills.jpg); }
     .card2__picture--2 {
-      background-image: url(../../img/nathaniel-yeo-747NDboAWNY-unsplash.jpg); }
+      background-image: url(../../img/pharmacy.jpg); }
     .card2__picture--3 {
-      background-image: url(../../img/hans-reniers-lQGJCMY5qcM-unsplash.jpg); }
+      background-image: url(../../img/tubes.jpg); }
   .card2__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -232,6 +240,56 @@ body {
     background-image: url("../../img/svg/ic_keyboard_arrow_right_120px.svg") !important;
     width: 120px !important;
     height: 120px !important; }
+
+.footer1 {
+  background-color: rgba(34, 87, 122, 0.8);
+  color: #FFFFFF;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (max-width: 48em) {
+    .footer1 {
+      padding: 8rem 0; } }
+  .footer1__container {
+    margin-left: 10rem;
+    display: flex; }
+  .footer1__image {
+    width: 75%;
+    margin-bottom: 3rem; }
+  .footer1__horarios {
+    margin-bottom: 3rem; }
+    .footer1__horarios__text {
+      font-weight: 500;
+      line-height: 1; }
+  .footer1__telefono {
+    margin-bottom: 3rem; }
+    .footer1__telefono__text {
+      font-weight: 500;
+      line-height: 1; }
+      .footer1__telefono__text-icon {
+        font-weight: 500; }
+        .footer1__telefono__text-icon::before {
+          content: url(../../img/svg/whatsapp.svg);
+          padding-right: 0.5rem;
+          float: left; }
+  .footer1__direccion {
+    margin-bottom: 3rem; }
+    .footer1__direccion__text {
+      font-weight: 500;
+      line-height: 1; }
+  .footer1__container__social-media {
+    margin-top: 5rem; }
+  .footer1__social-media__icons {
+    display: flex;
+    justify-content: space-between; }
+    .footer1__social-media__icons-fb {
+      margin-left: -1rem;
+      width: 48px;
+      height: 48px; }
+    .footer1__social-media__icons-ig {
+      width: 48px;
+      height: 48px; }
 
 .row {
   max-width: 114rem !important;
@@ -314,7 +372,7 @@ body {
     width: calc(3 * ((100% - 3 * 30rem) / 4) + 2 * 30rem) !important; }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(56, 163, 165, 0.2), rgba(56, 163, 165, 0.2)), url(../img/flores.jpg);
   background-size: cover;
   background-position: center;
@@ -338,8 +396,8 @@ body {
     width: 150px; }
   .navigation__link {
     flex-direction: row;
-    text-decoration: none;
-    color: #000000;
+    text-decoration: none !important;
+    color: #000000 !important;
     font-weight: 600;
     margin-right: 40px;
     cursor: pointer; }

@@ -1,0 +1,89 @@
+.footer1{
+    background-color: rgba($color-tertiary,0.8);
+    color: $color-white;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
+    &__container{
+        margin-left: 10rem;
+        display: flex;
+        //text-align: center;
+        //align-items: center;
+
+        
+    }
+
+    &__image{
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+
+    &__horarios{
+        margin-bottom: 3rem;
+
+        &__text{
+            font-weight: 500;
+            line-height: 1;
+        }
+    }
+
+    &__telefono{
+        margin-bottom: 3rem;
+        
+        &__text{
+            font-weight: 500;
+            line-height: 1;
+
+            &-icon{
+                font-weight: 500;
+
+                &::before{
+                    content: url(../../img/svg/whatsapp.svg);
+                    //position: absolute;
+                    padding-right: 0.5rem;
+                    float: left;
+                }
+            }
+
+        }
+    }
+
+    &__direccion{
+        margin-bottom: 3rem;
+
+        &__text{
+            font-weight: 500;
+            line-height: 1;
+        }
+    }
+
+
+    &__container__social-media{
+        margin-top: 5rem;
+    }
+
+    &__social-media__icons{
+        display: flex;
+        justify-content: space-between;
+
+        &-fb{
+            margin-left: -1rem;
+            width: 48px;
+            height: 48px;
+        }
+
+        &-ig{
+            //margin-left: 11rem;
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+}
