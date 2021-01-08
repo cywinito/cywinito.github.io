@@ -9,10 +9,10 @@
     justify-content: center;
     padding-top: 5rem;
 
-    // @include respond(tab-land){
-    //     height: 30rem;
+    @include respond(phone){
+         height: 25rem;
 
-    // }
+     }
     
 
     &__details{
@@ -41,9 +41,10 @@
 
     &__text{
         color: $color-grey-2;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
     }
 }
 
@@ -93,6 +94,15 @@
         right: 2rem;
         width: 75%;
         
+        @include respond(tab-port){
+            top: 20rem;
+            right: 1rem;
+        }
+
+        @include respond(phone){
+            top: 18rem;
+            
+        }
     
     }
 
@@ -117,5 +127,9 @@
         font-weight: 400;
         color: $color-grey-2;
         font-size: 1.3rem;
+
+        @include respond(tab-port){
+            font-size: 1.7rem;
+        }
     }
 }

@@ -2,10 +2,15 @@
     background-color: $color-primary-light;
     width: 5% !important;
 
+    @include respond(tab-land){
+        width: 3% !important;
+    }
+
     &__previous{
         background-image: url('../../img/svg/ic_keyboard_arrow_left_120px.svg') !important;
         width: 120px !important;
         height: 120px !important;
+
     }
 
     &__next{
@@ -13,7 +18,13 @@
         width: 120px !important;
         height: 120px !important;
     }
+    
 
+}
+@include respond(tab-port){
 
-    //PARA HACERLO RESPONSIVE PONER IMAGENES EN 100% WIDTH
+    .d-block{
+        width: 100% !important;
+    }
+    
 }

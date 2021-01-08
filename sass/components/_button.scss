@@ -18,6 +18,7 @@
 
         border: none;
         cursor: pointer;
+        transition: all .4s;
 
     }
 
@@ -34,11 +35,49 @@
 
 
     &::after{
-        content: url(../../img/svg/whatsapplogo.svg);
+
+        content: "";
         position: absolute;
-        padding-left: 1rem;
-        float: right;
-        transform: scale(0.85);
+        display: block;
+        height: 32px;
+        width: 32px;
+        background-size: 32px 32px;
+        background-image: url(../../img/svg/whatsapplogo.svg);
+        background-repeat: no-repeat;
+        right: 3rem;
+        top: 2rem;
+
+
+
+        @include respond(tab-land){
+            height: 30px;
+            width: 30px;
+            background-size: 30px 30px;
+            right: 2.5rem;
+            top: 1.7rem;
+        }
+        @include respond(tab-port){
+            height: 25px;
+            width: 25px;
+            background-size: 25px 25px;
+            right: 2.5rem;
+            top: 1.7rem;
+        }
+        @include respond(phone){
+            height: 20px;
+            width: 20px;
+            background-size: 20px 20px;
+            right: 2.5rem;
+            top: 1.7rem;
+        }
+        
+    }
+
+    &--animated{
+        
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+        
     }
 }
 
