@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     line-height: 1.7 !important;
     color: $color-white;
+    font-size: 1rem;
 }
 
 .heading-primary{
@@ -17,7 +18,7 @@ body {
     
 
     animation-name: moveInLeft;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-out;
 }
 

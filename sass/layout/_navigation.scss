@@ -23,10 +23,30 @@
         cursor: pointer;
         font-size: $default-font-size;
         text-transform: uppercase;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            content: '';
+            width: 0;
+            height: 3px;
+            background: $color-primary-dark;
+            transition: width cubic-bezier(1,0,0,1) .4s;
+
+            @include respond(big-desktop){
+                top: 25px;
+            }
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+        
     }
 }
 
-//aca iria el media query que se activa cuando la pantalla es menor a cierto tamaño
 @include respond(tab-port){
         .navigation{
             display: none;
@@ -62,9 +82,6 @@
             box-shadow: 0 1rem 3rem rgba($color-black, .1);
             text-align: center;
             cursor: pointer;
-
-            
-
         }
 
         &__background {
@@ -87,9 +104,7 @@
             top: 0;
             left: 0;
             z-index: 1500;
-            
             opacity: 0;
-
             width: 0;
             transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
@@ -137,7 +152,6 @@
         }
 
 
-        //FUNCTIONALITY
         &__checkbox:checked ~ &__background {
             transform: scale(80);
         }
@@ -147,8 +161,6 @@
             width: 100%;
         }
 
-
-        //ICON
         &__icon {
             position: relative;
             margin-top: 3.5rem;

@@ -9,11 +9,13 @@
     justify-content: center;
     padding-top: 5rem;
 
-    @include respond(phone){
+    @include respond(tab-land){
          height: 25rem;
-
      }
-    
+     
+    @include respond(phone){
+        height: 30rem;
+    }
 
     &__details{
         display: flex;
@@ -45,6 +47,10 @@
         font-size: 1.3rem;
         line-height: 2rem;
         text-align: center;
+
+        @include respond(tab-land){
+            font-size: 2rem;
+        }
     }
 }
 
@@ -69,12 +75,13 @@
         
         &--1 {
             background-image: 
-            url(./../../img/pills.jpg);
+            url(./../../img/perfume.jpg);
+            background-position: center;
         }
 
         &--2 {
             background-image: 
-            url(../../img/pharmacy.jpg);
+            url(../../img/bandaid.jpg);
         }
 
         &--3 {
@@ -125,11 +132,11 @@
 
     &__text{
         font-weight: 400;
-        color: $color-grey-2;
-        font-size: 1.3rem;
+        color: $color-black;
+        font-size: 1.5rem;
 
         @include respond(tab-port){
-            font-size: 1.7rem;
+            font-size: 2rem;
         }
     }
 }

@@ -12,10 +12,9 @@
         border-radius: 100px;
         position: relative;
         padding: 2rem 4rem 2rem 2rem;
-        width: 21rem;
+        width: 25rem;
         background-color: $color-primary;
         color: $color-black;
-
         border: none;
         cursor: pointer;
         transition: all .4s;
@@ -28,7 +27,7 @@
     }
 
     &__text{
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: 600;
         
     }
@@ -45,7 +44,7 @@
         background-image: url(../../img/svg/whatsapplogo.svg);
         background-repeat: no-repeat;
         right: 3rem;
-        top: 2rem;
+        top: 2.3rem;
 
 
 
@@ -54,27 +53,26 @@
             width: 30px;
             background-size: 30px 30px;
             right: 2.5rem;
-            top: 1.7rem;
+            top: 1.8rem;
         }
         @include respond(tab-port){
             height: 25px;
             width: 25px;
             background-size: 25px 25px;
             right: 2.5rem;
-            top: 1.7rem;
+            top: 2rem;
         }
         @include respond(phone){
             height: 20px;
             width: 20px;
             background-size: 20px 20px;
             right: 2.5rem;
-            top: 1.7rem;
+            top: 2rem;
         }
         
     }
 
     &--animated{
-        
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
         
