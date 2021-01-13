@@ -65,54 +65,32 @@
 
     &__telefono{
         margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         
+
+        @include respond(tab-port){
+            align-items: center;
+        }
+
         &__text{
             font-weight: 500;
             line-height: 1;
 
             &-icon{
                 font-weight: 500;
-                position: relative;
-                padding-left: 2.5rem;
-                margin-top: 1rem;
-
-                @include respond(tab-land){
-                    padding-left: 3rem;
-                }
+                margin-top: .5rem;
+                display: flex;
 
                 &::before{
                     content: "";
-                    position: absolute;
-                    display: block;
                     height: 25px;
                     width: 25px;
                     background-size: 25px 25px;
                     background-image: url(../../img/svg/whatsapp.svg);
                     background-repeat: no-repeat;
-                    float: left;
-                    top: 4px;
-                    margin-left: -2.5rem;
-
-
-                    @include respond(tab-land){
-                        margin-left: -3.3rem;
-                        top: 0;
-                    }
-
-                    @include respond(tab-port){
-                        left: 38.5rem;
-                        top: 2px;
-                        margin-left: 0;
-                    }
-
-                    @include respond(phone){
-                        height: 20px;
-                        width: 20px;
-                        background-size: 20px 20px;
-                        left: 38rem;
-                        top: 0px;
-                        margin-left: 0;
-                    }
+                    margin-right: 1rem;
                 }
             }
 
